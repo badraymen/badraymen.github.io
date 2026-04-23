@@ -1,0 +1,229 @@
+# ───────────────────────────────────
+# Pages CMS configuration
+# ───────────────────────────────────
+media:
+  input: image
+  output: /image
+
+# ───────────────────────────────────
+# Pages content
+# ───────────────────────────────────
+content:
+  - name: home
+    label: 🏠 Home Page
+    type: file
+    path: _data/home.json
+    fields:
+      - name: hero_badge
+        label: Badge (نص الشارة الذهبية)
+        type: string
+      - name: hero_title
+        label: Hero Title (الاسم الكبير)
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: string
+      - name: hero_tagline
+        label: Hero Tagline (المائل)
+        type: string
+      - name: stat_year
+        label: Stats — Year Started
+        type: string
+      - name: stat_pieces
+        label: Stats — Pieces Retouched
+        type: string
+      - name: stat_turnaround
+        label: Stats — Turnaround
+        type: string
+      - name: stat_satisfaction
+        label: Stats — Satisfaction
+        type: string
+      - name: problem_title
+        label: Problem Section — Title
+        type: string
+      - name: problem_text
+        label: Problem Section — Text
+        type: text
+      - name: problem_highlight
+        label: Problem Section — Highlight
+        type: string
+      - name: about_title
+        label: About Section — Title
+        type: string
+      - name: about_p1
+        label: About Section — Paragraph 1
+        type: text
+      - name: about_p2
+        label: About Section — Paragraph 2
+        type: text
+      - name: about_p3
+        label: About Section — Paragraph 3
+        type: text
+      - name: contact_title
+        label: Contact Section — Title
+        type: string
+      - name: contact_subtitle
+        label: Contact Section — Subtitle
+        type: string
+      - name: pricing_note
+        label: Pricing Section — Bottom Note
+        type: string
+      - name: pricing_payment
+        label: Pricing Section — Payment Note
+        type: string
+      - name: footer_copyright
+        label: Footer — Copyright
+        type: string
+      - name: footer_instagram
+        label: Footer — Instagram Handle
+        type: string
+      - name: home_bg_color
+        label: Hero Background Color (hex)
+        type: string
+        default: "#0a0a0a"
+      - name: accent_color
+        label: Accent Color (gold/buttons)
+        type: string
+        default: "#c5a028"
+      - name: body_text_color
+        label: Body Text Color
+        type: string
+        default: "#f5f5f5"
+      - name: heading_font
+        label: Heading Font Family
+        type: string
+        default: "Cormorant Garamond, serif"
+      - name: body_font
+        label: Body Font Family
+        type: string
+        default: "Inter, sans-serif"
+      - name: hero_image
+        label: Hero Background Image
+        type: image
+      - name: logo_image
+        label: Site Logo
+        type: image
+
+  - name: commercial
+    label: 💼 Commercial Page
+    type: file
+    path: _data/commercial.json
+    fields:
+      - name: page_title
+        label: Page Title (tab)
+        type: string
+      - name: hero_title
+        label: Hero Title
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: string
+      - name: intro_title
+        label: Intro Title
+        type: string
+      - name: intro_text
+        label: Intro Text
+        type: text
+      - name: cta_text
+        label: CTA Button Text
+        type: string
+      - name: page_image
+        label: Page Image
+        type: image
+
+  - name: artistic
+    label: 🎨 Artistic Page
+    type: file
+    path: _data/artistic.json
+    fields:
+      - name: page_title
+        label: Page Title (tab)
+        type: string
+      - name: hero_title
+        label: Hero Title
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: string
+      - name: intro_title
+        label: Intro Title
+        type: string
+      - name: intro_text
+        label: Intro Text
+        type: text
+      - name: cta_text
+        label: CTA Button Text
+        type: string
+      - name: page_image
+        label: Page Image
+        type: image
+
+  - name: bespoke
+    label: 💎 Bespoke Page
+    type: file
+    path: _data/bespoke.json
+    fields:
+      - name: page_title
+        label: Page Title (tab)
+        type: string
+      - name: hero_title
+        label: Hero Title
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: string
+      - name: intro_title
+        label: Intro Title
+        type: string
+      - name: intro_text
+        label: Intro Text
+        type: text
+      - name: cta_text
+        label: CTA Button Text
+        type: string
+      - name: page_image
+        label: Page Image
+        type: image
+
+  - name: blog
+    label: 📝 Blog Page
+    type: file
+    path: _data/blog.json
+    fields:
+      - name: page_title
+        label: Page Title (tab)
+        type: string
+      - name: hero_title
+        label: Hero Title
+        type: string
+      - name: hero_subtitle
+        label: Hero Subtitle
+        type: string
+      - name: section_label
+        label: Section Label
+        type: string
+
+  - name: blog_posts
+    label: 📰 Blog Posts
+    type: collection
+    path: _data/blog-posts
+    format: json
+    fields:
+      - name: title
+        label: Post Title
+        type: string
+      - name: date
+        label: Date
+        type: date
+      - name: category
+        label: Category
+        type: string
+      - name: excerpt
+        label: Excerpt
+        type: text
+      - name: body
+        label: Body
+        type: rich-text
+      - name: image
+        label: Featured Image
+        type: image
