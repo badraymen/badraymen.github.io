@@ -3,9 +3,9 @@ backend:
   repo: badraymen/badraymen.github.io
   branch: main
   base_url: https://proxy.aijewelryretouch.workers.dev
-  
-media_folder: "image" # مجلد الصور في موقعك
-public_folder: "/image" # المسار المستخدم في HTML
+
+media_folder: "image"
+public_folder: "/image"
 
 collections:
   - name: "pages"
@@ -17,8 +17,3 @@ collections:
         fields:
           - {label: "Hero Title", name: "hero_title", widget: "string"}
           - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string"}
-          - {label: "Hero Job Title", name: "hero_job", widget: "string"}
-          - {label: "Hero Tagline", name: "hero_tagline", widget: "string"}
-          - {label: "About Paragraph 1", name: "about_p1", widget: "text"}
-          - {label: "About Paragraph 2", name: "about_p2", widget: "text"}
-          - {label: "About Paragraph 3", name: "about_p3", widget: "text"}
