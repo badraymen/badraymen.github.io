@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: badraymen/badraymen.github.io # اسم المستودع
+  branch: main # أو "master" إذا كان هذا هو اسم الفرع عندك
+
+media_folder: "image" # مجلد الصور في موقعك
+public_folder: "/image" # المسار المستخدم في HTML
+
+collections:
+  - name: "pages"
+    label: "Site Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "_data/home.json"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string"}
+          - {label: "Hero Job Title", name: "hero_job", widget: "string"}
+          - {label: "Hero Tagline", name: "hero_tagline", widget: "string"}
+          - {label: "About Paragraph 1", name: "about_p1", widget: "text"}
+          - {label: "About Paragraph 2", name: "about_p2", widget: "text"}
+          - {label: "About Paragraph 3", name: "about_p3", widget: "text"}
