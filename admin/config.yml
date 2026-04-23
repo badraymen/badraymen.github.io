@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: badraymen/badraymen.github.io # اسم المستودع
-  branch: main # أو "master" إذا كان هذا هو اسم الفرع عندك
-
+  repo: badraymen/badraymen.github.io
+  branch: main
+  base_url: https://proxy.aijewelryretouch.workers.dev
+  
 media_folder: "image" # مجلد الصور في موقعك
 public_folder: "/image" # المسار المستخدم في HTML
 
