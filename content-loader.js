@@ -16,18 +16,18 @@
   fetch(dataFile)
     .then(function (r) { return r.json(); })
     .then(function (data) {
-      // Inject text content into [data-cms] elements
+      // حقن النصوص باستخدام innerHTML للحفاظ على وسوم HTML
       document.querySelectorAll("[data-cms]").forEach(function (el) {
         var key = el.getAttribute("data-cms");
-        if (data[key] !== undefined) {
-          el.textContent = data[key];
+        if (data[key] !== undefined && data[key] !== null) {
+          el.innerHTML = data[key];
         }
       });
 
-      // Update page title
+      // تحديث عنوان الصفحة
       if (data.page_title) document.title = data.page_title;
 
-      // Inject images into [data-cms-img] elements
+      // حقن الصور
       document.querySelectorAll("[data-cms-img]").forEach(function (img) {
         var key = img.getAttribute("data-cms-img");
         if (data[key]) {
@@ -35,7 +35,7 @@
         }
       });
 
-      // Apply CSS custom properties for colors/fonts (home page only)
+      // تطبيق ألوان وخطوط CSS
       if (data.home_bg_color) {
         document.documentElement.style.setProperty("--bg-color", data.home_bg_color);
       }
