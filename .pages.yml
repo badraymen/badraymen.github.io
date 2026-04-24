@@ -12,7 +12,7 @@ content:
   - name: home
     label: 🏠 Home Page
     type: file
-    path: _data/home.json
+    path: data/home.json
     fields:
       - name: hero_badge
         label: Badge (نص الشارة الذهبية)
@@ -107,7 +107,7 @@ content:
   - name: commercial
     label: 💼 Commercial Page
     type: file
-    path: _data/commercial.json
+    path: data/commercial.json
     fields:
       - name: page_title
         label: Page Title (tab)
@@ -134,7 +134,7 @@ content:
   - name: artistic
     label: 🎨 Artistic Page
     type: file
-    path: _data/artistic.json
+    path: data/artistic.json
     fields:
       - name: page_title
         label: Page Title (tab)
@@ -161,7 +161,7 @@ content:
   - name: bespoke
     label: 💎 Bespoke Page
     type: file
-    path: _data/bespoke.json
+    path: data/bespoke.json
     fields:
       - name: page_title
         label: Page Title (tab)
@@ -188,7 +188,7 @@ content:
   - name: blog
     label: 📝 Blog Page
     type: file
-    path: _data/blog.json
+    path: data/blog.json
     fields:
       - name: page_title
         label: Page Title (tab)
@@ -206,7 +206,7 @@ content:
   - name: blog_posts
     label: 📰 Blog Posts
     type: collection
-    path: _data/blog-posts
+    path: data/blog-posts
     format: json
     fields:
       - name: title
