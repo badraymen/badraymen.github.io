@@ -1,11 +1,11 @@
 (function () {
   var pageMap = {
-    "index": "_data/home.json",
-    "": "_data/home.json",
-    "commercial": "_data/commercial.json",
-    "artistic": "_data/artistic.json",
-    "bespoke": "_data/bespoke.json",
-    "blog": "_data/blog.json"
+    "index": "data/home.json",
+    "": "data/home.json",
+    "commercial": "data/commercial.json",
+    "artistic": "data/artistic.json",
+    "bespoke": "data/bespoke.json",
+    "blog": "data/blog.json"
   };
 
   var page = window.location.pathname.split("/").pop().replace(".html", "") || "";
