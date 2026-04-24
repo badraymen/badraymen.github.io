@@ -27,4 +27,7 @@
   "body_font": "Inter, sans-serif",
   "hero_image": "/image/Gros%20plans.png",
   "about_image": "/image/aymen-profile.jpg"
+  "price_test": "$45",
+  "price_commercial": "from $25",
+  "price_volume": "Custom",
 }

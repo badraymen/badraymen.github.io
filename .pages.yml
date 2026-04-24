@@ -65,6 +65,18 @@ content:
       - name: contact_subtitle
         label: Contact Section — Subtitle
         type: string
+      - name: price_test
+        label: Pricing — Test Image
+        type: string
+        default: "$45"
+      - name: price_commercial
+        label: Pricing — Commercial/Artistic
+        type: string
+        default: "from $25"
+      - name: price_volume
+        label: Pricing — Volume
+        type: string
+        default: "Custom"
       - name: pricing_note
         label: Pricing Section — Bottom Note
         type: string
