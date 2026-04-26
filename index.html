@@ -1917,7 +1917,11 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
     <script>
+
         const cursor = document.getElementById("cursor");
         if (cursor && window.innerWidth >= 1024) {
             let cursorX = 0,
@@ -2153,11 +2157,10 @@
 
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top">↑</button>
+        });</script>
 </body>
 
 </html>
+
+
+
