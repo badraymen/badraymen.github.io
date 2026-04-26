@@ -824,6 +824,19 @@
         }
 
         @media (max-width: 768px) {
+            #hero {
+                padding-top: 80px;
+                min-height: 100vh;
+            }
+
+            .hero-bg {
+                aspect-ratio: auto;
+                min-height: 100vh;
+                background-size: cover;
+                background-position: center top;
+            }
+
+            
             .giant-grid {
                 grid-template-columns: 1fr;
                 gap: 12px;
@@ -1920,7 +1933,11 @@
     <!-- Back to Top Button -->
     <button id="back-to-top">↑</button>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top">↑</button>
+
     <script>
+
 
         const cursor = document.getElementById("cursor");
         if (cursor && window.innerWidth >= 1024) {
@@ -2158,9 +2175,15 @@
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });</script>
+        });</script>
 </body>
 
 </html>
+
+
+
+
+
 
 
 
