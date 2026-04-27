@@ -70,7 +70,6 @@
 <link href="//fonts.googleapis.com" rel="dns-prefetch"/>
 <link href="//instagram.com" rel="dns-prefetch"/>
 <link href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20fill='%230A0A0A'/%3E%3Ccircle%20cx='50'%20cy='50'%20r='30'%20fill='%23C9A96E'/%3E%3Ctext%20x='50'%20y='65'%20font-size='40'%20text-anchor='middle'%20fill='%230A0A0A'%20font-family='Georgia'%20font-weight='bold'%3EAB%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
-<script src="content-loader.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -983,7 +982,8 @@
 <body class="grain-overlay font-body antialiased" id="bodyRoot">
 <div class="custom-cursor hidden lg:block" id="cursor"></div>
 <div class="toast" id="toast">✓ Message sent. I'll reply within 24 hours.</div>
-<nav class="fixed top-0 left-0 right-0 z-50 bg-atelier-bg/80 backdrop-blur-md border-b border-atelier-border/50 transition-all duration-300">
+<header>
+<nav class="fixed top-0 left-0 right-0 z-50 bg-atelier-bg/80 backdrop-blur-md border-b border-atelier-border/50 transition-all duration-300" role="navigation" aria-label="Main navigation">
 <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
 <div class="flex items-center justify-between h-16 md:h-20">
 <a class="font-serif text-lg md:text-xl tracking-ultrawide text-atelier-text uppercase" href="#hero">AB</a>
@@ -1075,6 +1075,8 @@
 </div>
 </div>
 </nav>
+</header>
+<main>
 <section class="hero-bg" data-cms-img="hero_image" id="hero">
 <div class="hero-content px-6 md:px-12">
 <div class="hero-animate mb-4 md:mb-6">
@@ -1967,6 +1969,7 @@
 </div>
 </div>
 </section>
+</main>
 <footer class="relative border-t border-atelier-border/50 py-8 md:py-10 px-6 md:px-12 lg:px-20">
 <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-4">
 <div class="flex items-center gap-3">
